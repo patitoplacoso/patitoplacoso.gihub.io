@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    background-image: url('fondo.png'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la página */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen permanezca fija al hacer scroll */
+    transition: background-image 0.5s ease-in-out; /* Suaviza el cambio de fondo */
+    color: white;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos de la cabecera */
+#main-header {
+    background: #60057f; /* Azul vibrante */
+    color: white;
+    height: 80px;
+ }
+  
+ /* Logo en la cabecera */
+ #logo-header {
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+ }
+  
+ #logo-header .site-name {
+    display: block;
+    font-weight: 70px;
+    font-size: 1.2em;
+    color: #ffffff;
+ }
+  
+ #logo-header .site-desc {
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #fff;
+ }
+  
+ /* Estilos para la navegación */
+ nav {
+    float: right;
+ }
+  
+ nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+ }
+  
+ nav ul li {
+    display: inline-block;
+    line-height: 80px;
+ }
+  
+ nav ul li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #ffffff; /* Blanco para los links */
+    border-radius: 5px;
+ }
+  
+ nav ul li a:hover {
+    background: #ff00e6; /* Azul más oscuro en el hover */
+    transition: background-color 0.3s;
+ }
+  
+ /* Menú desplegable */
+ li.dropdown {
+    display: inline-block;
+ }
+  
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* Fondo blanco para el dropdown */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+ }
+  
+ .dropdown-content a {
+    color: #ff00e6; /* Azul para los links del dropdown */
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+ }
+  
+ .dropdown-content a:hover {
+    background-color: #f0f0f0; /* Gris claro al pasar el mouse */
+ }
+  
+ .dropdown:hover .dropdown-content {
+    display: block;
+ }
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.categories button {
+    margin: 10px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #60057f;
+    color: #fff;
+    cursor: pointer;
+}
+
+.categories button:hover {
+    background-color: #ff00e6;
+    transition: background-color 0.2s;
+}
+
+.products {
+    display: none;
+    margin: 20px auto;
+    max-width: 920px;
+}
+
+.products.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    flex: 1 1 calc(33.333% - 20px); /* Tres tarjetas por fila */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 15px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product-card p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.product-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.product-card button:hover {
+    background-color: #218838;
+}
+
+/* Estilo para la sección de "Quiénes Somos" */
+.quienessomos {
+    background-color: rgba(96, 30, 116, 0.692); /* Fondo oscuro semitransparente */
+    color: white; /* Texto blanco para buen contraste */
+    padding: 30px; /* Espaciado alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 20px; /* Espaciado superior */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave alrededor */
+}
+
+/* Estilo para los títulos dentro de la sección */
+.quienessomos p strong {
+    color: #ffffff; /* Color dorado para los títulos destacados */
+}
+
+/* Estilo para las listas dentro de la sección */
+.quienessomos ul {
+    list-style-type: disc; /* Estilo de lista con puntos */
+    margin-left: 20px; /* Margen izquierdo */
+}
+
+.quienessomos ul li {
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+/* Estilo para los párrafos dentro de la sección */
+.quienessomos p {
+    font-size: 1.1em; /* Tamaño de texto ligeramente más grande */
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: justify; /* Justificar el texto */
+}
+
+/* Estilos para el apartado del video e información */
+#video-info {
+    background-color: rgba(233, 146, 255, 0.493); /* Fondo semitransparente negro */
+    padding: 150px; /* Espaciado interno */
+    margin: 200px; /* Espaciado externo */
+    color: white; /* Texto blanco para mejor contraste */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 140px;
+    padding: 70px 70px;
+}
+
+/* Estilos para el contenedor del video */
+#video-info .video-container {
+    margin-bottom: 20px; /* Espaciado debajo del video */
+    text-align: center; /* Centrar el video */
+}
+
+/* Estilos para los títulos dentro de la sección */
+#video-info h2, #video-info h3 {
+    font-family: 'Arial', sans-serif; /* Fuentes para los títulos */
+    color: #ff00e6; /* Color dorado para los títulos */
+    text-align: center; /* Centrar los títulos */
+}
+
+/* Estilos para el párrafo de la información */
+#video-info p {
+    font-size: 1.1em; /* Tamaño de texto ligeramente más grande */
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: justify; /* Justificar el texto */
+    margin-top: 10px;
+    text-align: center;
+}
+
+table{
+    margin: 0 auto
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.active {
+    display: block;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta cha   rset="uft-8">
+        <title>Catalogo</title>
+        <link rel="stylesheet" href="estiloprueba.css">
+    </head>
+    <body style="background-image: url('fondo2.png'); background-size: cover; background-position: center;">
+        <header id="main-header">
+            <a id="logo-header" href="#">
+                <span class="site-name">PIA</span>
+                <span class="site-desc">Diseño Avanzado en Páginas Web</span>
+            </a> <!--/#logo-header-->
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Inicio</a></li>
+                    <li> <a href="somos.html">Quienes somos?</a></li><!--Menu inicio-->
+                    <li> <a href="Historia 3.html">Historia</a></li>
+                    <li> <a href="Promociones.html">Promociones</a></li>
+                    <li> <a href="Sucursales.html">Sucursales</a></li>
+                    <li> <a href="contactanos.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </header>
+</head>
+<body>
+  <div class="header">
+    <h1>Catálogo de Productos</h1>
+  </div>
+
+  <div class="categories">
+    <button onclick="showCategory('celulares')">Celulares</button>
+    <button onclick="showCategory('accesorios')">Accesorios</button>
+    <button onclick="showCategory('audifonos')">Audífonos</button>
+  </div>
+
+  <div id="celulares" class="products active">
+    <div class="product-card">
+        <img src="iphone.jpg" alt="iPhone 15">
+         <h3>iPhone 15</h3>
+         <p>Precio: $25,999 MXN</p>
+         <p>Características: Pantalla OLED de 6.1 pulgadas y chip A16 Bionic</p>
+         <button>Comprar Ahora</button>
+    </div>
+    <div class="product-card">
+        <img src="samsung.jpeg" alt="Samsung Galaxy S23">
+        <h3>Samsung Galaxy S23</h3>
+        <p>Precio: $14,382 MXN</p>
+        <p>Características: Pantalla Dynamic AMOLED de 6.1 pulgadas y chip Snapdragon 8 Gen 2</p>
+        <button>Comprar Ahora</button>
+    </div>
+    <div class="product-card">
+        <img src="xiaomi.png" alt="Xiaomi 13 Pro">
+        <h3>Xiaomi 13 Pro</h3>
+        <p>Precio: $16,182 MXN</p>
+        <p>Características: Pantalla Dynamic AMOLED de 6.1 pulgadas y chip Snapdragon 8 Gen 2</p>
+        <button>Comprar Ahora</button>
+    </div>
+  </div>
+
+  <div id="accesorios" class="products">
+    <div class="product-card">
+      <img src="funda.png" alt="Funda">
+      <h3>Funda</h3>
+      <p>Precio: $350 MXN</p>
+      <p>Características: Protección antigolpes</p>
+      <button>Comprar Ahora</button>
+    </div>
+    <div class="product-card">
+      <img src="Cargador.png" alt="Cargador Lightning">
+      <h3>Cargador Lightning</h3>
+      <p>Precio: $299 MXN</p>
+      <p>Características: 20W carga rápida</p>
+      <button>Comprar Ahora</button>
+    </div>
+  </div>
+
+  <div id="audifonos" class="products">
+    <div class="product-card">
+      <img src="airpods.png" alt="AirPods Pro">
+      <h3>Apple AirPods Pro 2ª generación</h3>
+      <p>Precio: $3,750 MXN</p>
+      <p>Características: Cancelación de ruido, 6 horas de batería</p>
+      <button>Comprar Ahora</button>
+    </div>
+    <div class="product-card">
+      <img src="skullcandy.png" alt="Skullcandy Riff">
+      <h3>Skullcandy Riff Wireless 2</h3>
+      <p>Precio: $967 MXN</p>
+      <p>Características: Modo manos libres incluido, 34 horas de batería + carga rápida</p>
+      <button>Comprar Ahora</button>
+    </div>
+  </div>
+
+  <script src="funcionesPia.js"></script>
+</body>
+</html>
